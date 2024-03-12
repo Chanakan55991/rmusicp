@@ -1,0 +1,11 @@
+[package]
+name = "rmusicp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctrlc = { version = "3.4.4", features = ["termination"] }
+regex = "1.10.3"
+rodio = { version = "0.17.3", default-features = false, features = ["symphonia-all"] }
+tempfile = "3.10.1"
+ytd-rs = { version = "0.1.7", features = ["yt-dlp"] }
