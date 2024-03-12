@@ -102,7 +102,7 @@ fn main() {
                     continue;
                 }
 
-                if sink.len() == 0 {
+                if sink.empty() {
                     sink.play();
                     println!("Playing Audio...");
                 } else {
@@ -124,7 +124,7 @@ fn main() {
                 }
             }
             "n" | "next" => {
-                if sink.len() == 0 {
+                if sink.empty() {
                     println!("No more audio to play");
                 } else {
                     println!("Playing Next Song...");
@@ -136,7 +136,7 @@ fn main() {
                 println!("Skipping {skip_amount} Song(s)...");
 
                 for _ in 0..skip_amount {
-                    if sink.len() == 0 {
+                    if sink.empty() {
                         println!("No more audio to play");
                         break;
                     }
