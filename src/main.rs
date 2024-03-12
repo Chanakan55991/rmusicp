@@ -86,6 +86,7 @@ fn main() {
                                 .collect::<Vec<&str>>()[1];
                             let fullpath = format!("{}/{}", filepath, path);
                             file = File::open(fullpath);
+                            break;
                         }
                     }
                 }
